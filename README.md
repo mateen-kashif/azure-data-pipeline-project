@@ -9,12 +9,7 @@ Learning project: cleaning data with pandas and storing it in Azure Data Lake St
 ## Tech
 Python, pandas, SQL, Azure Storage
 
-## Next steps
-- Read data directly from Azure into pandas
-- Save cleaned data to a clean folder
-- Automate with Azure Data Factory
-
-- ## Project 1: Retail Sales Data Pipeline
+## Project 1: Retail Sales Data Pipeline
 
 **Problem:** Raw sales data had duplicates and missing values.
 
@@ -31,3 +26,25 @@ Python, pandas, SQL, Azure Storage
 **Notebook:** [retail_project.ipynb](retail_project.ipynb)
 
 **Tech:** Python, pandas, Azure Data Lake Storage Gen2
+
+## Project 2: SQL Analysis on Cleaned Sales Data
+
+**Problem:** Cleaned sales data needed to be queried like a real database.
+
+**Steps:**
+1. Loaded the cleaned CSV (from Project 1) into a SQLite database
+2. Wrote SQL queries to answer business questions:
+   - Total sales
+   - Revenue by product (GROUP BY, ORDER BY)
+   - Revenue by city
+   - Orders above 1000 (WHERE)
+   - Average order value per product (AVG)
+3. Verified SQL results match the pandas groupby results from Project 1
+
+**Notebook:** [sql_project.ipynb](sql_project.ipynb)
+
+**Tech:** Python, pandas, SQLite, SQL
+
+## Next steps
+- Read data directly from Azure into pandas (Project 3)
+- Automate the pipeline with Azure Data Factory
