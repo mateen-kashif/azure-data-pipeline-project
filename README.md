@@ -45,6 +45,19 @@ Python, pandas, SQL, Azure Storage
 
 **Tech:** Python, pandas, SQLite, SQL
 
+## Project 3: Reading Data Directly from Azure Data Lake
+
+**Problem:** Data was moved manually between laptop and cloud.
+
+**Steps:**
+1. Connected Python (pandas + adlfs) to Azure Data Lake Storage Gen2
+2. Read the cleaned CSV directly from raw-data/clean using an abfs:// path
+3. Kept credentials out of the code before publishing
+
+**Notebook:** [azure_project.ipynb](azure_project.ipynb)
+
+**Tech:** Python, pandas, adlfs, Azure Data Lake Storage Gen2
+
 ## Next steps
-- Read data directly from Azure into pandas (Project 3)
 - Automate the pipeline with Azure Data Factory
+- Learn secure credential handling (SAS tokens, Key Vault)
