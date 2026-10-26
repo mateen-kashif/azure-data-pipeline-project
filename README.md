@@ -58,6 +58,23 @@ Python, pandas, SQL, Azure Storage
 
 **Tech:** Python, pandas, adlfs, Azure Data Lake Storage Gen2
 
+## Project 4: Petrol Pump Data Pipeline (Raw → Clean → Analysis)
+
+**Problem:** Petrol pump sales data (2000+ entries) had duplicates, missing values and impossible entries (negative / 500-liter fills).
+
+**Steps:**
+1. Generated 3 months of synthetic petrol pump data with Python
+2. Stored raw data in Azure Data Lake (raw-data/petrol/raw)
+3. Cleaned with pandas: removed duplicates, filtered invalid liters, filled missing payment/vehicle values with "Unknown", fixed date type
+4. Added data quality checks (assert) for duplicates, invalid liters and nulls
+5. Stored clean data in Azure Data Lake (raw-data/petrol/clean)
+6. Answered business questions: best day, best month, cash vs online, bikes vs cars vs trucks
+
+**Notebook:** [petrol_project.ipynb](https://github.com/mateen-kashif/azure-data-pipeline-project/blob/main/petrol_project.ipynb)
+
+**Tech:** Python, pandas, numpy, Azure Data Lake Storage Gen2
+
 ## Next steps
 - Automate the pipeline with Azure Data Factory
 - Learn secure credential handling (SAS tokens, Key Vault)
+- Load clean petrol data into a SQL database and build a dashboard
